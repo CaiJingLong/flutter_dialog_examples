@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:dialog_examples/general_dialog_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'input_dialog.dart';
@@ -39,6 +40,15 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton("显示一个简易状态dialog", _showDialogWithStatefulBuilder),
           buildButton("显示一个iOS风格的dialog", showCupertinoDialog),
           buildButton("显示一个有输入框的dialog", showHasInputDialog),
+          buildButton(
+            "显示一个背景颜色不同的dialog",
+            () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => GeneralDialogPage(),
+                  ),
+                ),
+          ),
         ],
       ),
     );
