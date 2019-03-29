@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
           buildButton("显示一个iOS风格的dialog", showCupertinoDialog),
           buildButton("显示一个有输入框的dialog", showHasInputDialog),
           buildButton(
-            "显示一个背景颜色不同的dialog",
+            "showGeneralDialog的使用",
             () => Navigator.push(
                   context,
                   MaterialPageRoute(
